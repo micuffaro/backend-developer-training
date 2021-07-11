@@ -37,3 +37,42 @@ The modulo operator in C will give the remainder that is left over when one numb
 `16 % 4` equals to `0`, because there is no remainder
 
 Therefore if the result of a modulo operator is equal to 0, it means that number is a multiple of the other.
+
+## Extra objectives:
+- Prompt the user for a number, and have fizzbuzz count up to that number. For example:
+```
+./fizzbuzz
+limit: 3
+1
+2
+Fizz
+./fizzbuzz
+limit: 5
+1
+2
+Fizz
+4
+Buzz
+```
+The value should not be less than 0, and should have a maximum of 65535.
+Should the user input anything between those limits, the program should ask the user again for the limit until we have a value that we like.
+```
+./fizzbuzz
+limit: -1
+limit: 100000000000
+limit: 3
+1
+2
+Fizz
+```
+- What happens if we allow the user to input a `int` value of 65536? Does the program compile? Why/Why not?
+- Have the program count backwards from the user defined upper limit to 0.
+```
+./fizzbuzz
+limit: 5
+Buzz
+4
+Fizz
+2
+1
+```
